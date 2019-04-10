@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Our Test</title>
+    <link rel="stylesheet" href="css/style_test.css" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <iframe width="0" height="0" src="music/lord of the ring.mp3" frameborder="0" allowfullscreen></iframe>
+</head>
+<body>
+<section class="header">
+    <div class="container">
+        <audio style="visibility: hidden"  width="0" height="0" controls autoplay loop >
+            <source src="music/lord%20of%20the%20ring.mp3" type="audio/mpeg">
+        </audio>
+        <h1 class="word text-center">Your Test</h1>
+        <br>
+        <p>1. What's the movie's name?</p>
+
+        <div class="radio"><label><input type="radio" name="quiz3" id="Correct" value="2" onclick="myFunction()"> The Lord of The Rings</label></div>
+        <div class="radio"><label><input type="radio" name="quiz3" id="1" value="1"> El-Mawkos</label></div>
+        <div class="radio"><label><input type="radio" name="quiz3" id="3" value="3"> Hacona Matata</label></div>
+        <br>
+
+
+
+
+        <p> 2. Who mentions the title of the novel?</p>
+
+        <div class="radio"><label><input type="radio" name="quiz4" > Merry </label></div>
+        <div class="radio"><label><input type="radio" name="quiz4" > Pippin </label></div>
+        <div class="radio"><label><input type="radio" name="quiz4" onclick="myFunction2()"> Dark Lord Sauron</label></div>
+        <div class="radio"><label><input type="radio" name="quiz4" > Sam</label></div>
+        <br>
+        <p> 3. Who was a buddy frodo to morodo?</p>
+        <div class="radio"><label><input type="radio" name="quiz" > Gandalf</label></div>
+        <div class="radio"><label><input type="radio" name="quiz" > Rivendell</label></div>
+        <div class="radio"><label><input type="radio" name="quiz"  onclick="myFunction3()"> Sam</label></div>
+
+        <p>4. What is the name of the guard who mentioned Gandalf in the letter?</p>
+        <div class="radio"><label><input type="radio" name="quiz1"  onclick="myFunction4()"> Strider</label></div>
+        <div class="radio"><label><input type="radio" name="quiz1" > Sam</label></div>
+        <div class="radio"><label><input type="radio" name="quiz1" > Marey</label></div>
+
+
+
+        <p>5. To which city did the hobbits arrive?</p>
+        <div class="radio"><label><input type="radio" name="quiz2" > Rivendell</label></div>
+        <div class="radio"><label><input type="radio" name="quiz2"  onclick="myFunction5()">  Bree</label></div>
+        <div class="radio"><label><input type="radio" name="quiz2" > Gondor</label></div>
+        <div class="radio"><label><input type="radio" name="quiz2" > Morodo</label></div>
+    </div>
+    <button type="button" class="btn"  id="bot1" onclick="res()">Submit</button>
+
+
+    <div class="popup" id="pop">
+        <div class="contan">
+            <div class="con">
+                <h4>Congratulations !</h4>
+                <hr>
+                <span class="spa"> Your Rank </span> <p id="rank"></p>
+                <hr>
+                <button type="submit" class="btnc" onclick="closeForm()">Close</button>
+            </div>
+        </div>
+
+
+
+</section>
+<script src="JS/jstest.js"></script>
+
+</body>
+</html>
